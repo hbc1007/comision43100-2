@@ -140,42 +140,42 @@
             "imagen": "https://i.postimg.cc/ZnFf7Lzb/Happy-Planner-Dotted-Lined.jpg",
             "nombre": "HP Dotted Lined Notebook",
             "descto": 10,
-            "precio": 47.94
+            "precio": 79.90
         },
         {
             "id": "H002",
             "imagen": "https://i.postimg.cc/nLy0nWHV/Happy-Planner-Let-Your-Ideas-Bloom.jpg",
             "nombre": "HP Let Your Ideas Bloom",
             "descto": 10,
-            "precio": 47.94
+            "precio": 79.90
         },
         {
             "id": "H003",
             "imagen": "https://i.postimg.cc/3xbtcRVv/Happy-Planner-Live-Your-Dream.jpg",
             "nombre": "HP Live Your Dream",
             "descto": 10,
-            "precio": 47.94
+            "precio": 79.90
         },
         {
             "id": "H004",
             "imagen": "https://i.postimg.cc/fLdqXNH0/Happy-Planner-Mini-Lined.jpg",
             "nombre": "HP Mini Lined Notebook",
             "descto": 10,
-            "precio": 35.67
+            "precio": 59.90
         },
         {
             "id": "H005",
             "imagen": "https://i.postimg.cc/hPcZJNVf/Happy-Planner-Seek-Joy.jpg",
             "nombre": "HP Seek Joy",
             "descto": 10,
-            "precio": 47.94
+            "precio": 79.90
         },
         {
             "id": "H006",
             "imagen": "https://i.postimg.cc/Zq2DCRLS/Happy-Planner-Sketch-Paper.jpg",
             "nombre": "HP Sketch Paper Notebook",
             "descto": 10,
-            "precio": 47.94
+            "precio": 79.90
         }
     ]
 }

@@ -105,5 +105,42 @@ function cantidadBolsa(){
 cantidadBolsa();
 contProduct.innerText = cantCarrito;
 
+let finalizarBtn = document.getElementById("finalizar");
+let vaciarBtn = document.getElementById("vaciar");
+
+//---------------------------------------------------------------------------------------//
+//FUNCION FLECHA - FINALIZA LA COMPRA
+//---------------------------------------------------------------------------------------//
+finalizarBtn.onclick=()=>{
+    todosProductos=[];
+    filaProductos.innerHTML = '';
+    cartEmpty.classList.remove('hidden');
+    filaProductos.classList.add('hidden');
+    cartTotal.classList.add('hidden');
+    contProduct.innerText = "0";
+    //----------------------------------//
+    localStorage.clear('todos-Productos');
+    Swal.fire('Gracias por tu compra','Recibiras tu pedido en un máximo de 3 días','success');
+    
+    console.log('LOGICA2: Se ha usado la función flecha finalizarBtn');
+}
+
+
+//---------------------------------------------------------------------------------------//
+//FUNCION FLECHA - VACIAR CARRITO DE COMPRAS
+//---------------------------------------------------------------------------------------//
+vaciarBtn.onclick=()=>{
+    todosProductos=[];
+    filaProductos.innerHTML = '';
+    cartEmpty.classList.remove('hidden');
+    filaProductos.classList.add('hidden');
+    cartTotal.classList.add('hidden');
+    contProduct.innerText = "0";
+    //----------------------------------//
+    localStorage.clear('todos-Productos');
+    Swal.fire('Se ha vaciado el carrito','Puedes volver a seleccionar los productos de tu preferencia','success');
+    
+    console.log('LOGICA2: Se ha usado la función flecha finalizarBtn');
+}
 
 
