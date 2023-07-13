@@ -70,7 +70,8 @@ h6 {
   width: 3.2rem;
   height: 3.2rem;
   stroke: black;
-  margin-left: 1rem; }
+  margin-left: 5rem;
+  margin-right: 0rem; }
 
 .icon-cart:hover {
   cursor: pointer; }
@@ -81,7 +82,7 @@ h6 {
 .count-products {
   position: absolute;
   top: 55%;
-  right: 0;
+  right: 0rem;
   background-color: black;
   color: white;
   width: 2.5rem;
@@ -101,8 +102,9 @@ h6 {
 
 .container-cart-products {
   position: absolute;
+  margin: 0rem;
   top: 5rem;
-  right: 0;
+  right: -2rem;
   background-color: white;
   width: 40rem;
   z-index: 1;
@@ -803,7 +805,7 @@ h6 {
   .navbar {
     margin: 0rem;
     position: absolute;
-    top: 8.8rem;
+    top: 8.9rem;
     width: auto;
     margin-left: -100%; }
   .navbar ul {
@@ -879,6 +881,16 @@ h6 {
   .main-l {
     padding-top: 9.4rem; }
   /******************************************/
+  /*pagina planner.html - 1024              */
+  /******************************************/
+  .main-p {
+    padding-top: 9.4rem; }
+  /******************************************/
+  /*pagina libretas.html - 1024              */
+  /******************************************/
+  .main-l {
+    padding-top: 9.4rem; }
+  /******************************************/
   /*pagina planners.html - 1024              */
   /******************************************/
   .main-p {
@@ -916,9 +928,13 @@ h6 {
     width: 1.7rem;
     height: 1.7rem; }
   .navbar {
-    top: 7.4rem;
+    top: 7.5rem;
     width: auto;
     margin-left: -100%; }
+  .container-cart-products {
+    top: 7rem;
+    right: -4rem;
+    width: 38rem; }
   /******************************************/
   /***************MAIN - 768*****************/
   /******************************************/

@@ -40,7 +40,7 @@
     .navbar {
         margin: 0rem;
         position: absolute;
-        top: 8.8rem;
+        top: 8.9rem;
         width: auto;
         margin-left: -100%;
     }
@@ -107,7 +107,6 @@
         @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
     }
 
-
     /******************************************/
     /*pagina contactos.html - 1024              */
     /******************************************/
@@ -115,7 +114,6 @@
     .main-o {
         padding-top: 9.4rem;
     }
-
 
     /******************************************/
     /*pagina cuadernos.html - 1024              */
@@ -125,7 +123,6 @@
         padding-top: 9.4rem;
     }
 
-
     /******************************************/
     /*pagina libretas.html - 1024              */
     /******************************************/
@@ -134,6 +131,21 @@
         padding-top: 9.4rem;
     }
 
+    /******************************************/
+    /*pagina planner.html - 1024              */
+    /******************************************/
+
+    .main-p {
+        padding-top: 9.4rem;
+    }
+
+    /******************************************/
+    /*pagina libretas.html - 1024              */
+    /******************************************/
+
+    .main-l {
+        padding-top: 9.4rem;
+    }
 
     /******************************************/
     /*pagina planners.html - 1024              */

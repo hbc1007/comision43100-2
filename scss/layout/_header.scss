@@ -23,7 +23,8 @@
     width: 3.2rem;
     height: 3.2rem;
     stroke: $color-negro;
-    margin-left: 1rem;
+    margin-left: 5rem;
+    margin-right: 0rem;
 }
 
 .icon-cart:hover{
@@ -37,7 +38,7 @@
 .count-products{
     position: absolute;
     top: 55%;
-    right: 0;
+    right: 0rem;
     background-color: $color-negro;
     color: $color-blanco;
     width: 2.5rem;
@@ -52,8 +53,9 @@
 
 .container-cart-products{
     position: absolute;
+    margin: 0rem;
     top: 5rem;
-    right: 0;
+    right: -2rem;
     background-color: $color-blanco;
     width: 40rem;
     z-index: 1;

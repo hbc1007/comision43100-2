@@ -26,10 +26,27 @@
     }
 
     .navbar {
-        top: 7.4rem;
+        top: 7.5rem;
         width: auto;
         margin-left: -100%;
     }
+
+    .container-cart-products{
+        top: 7rem;
+        right: -4rem;
+        width: 38rem;
+    }
+
+    // .container-cart-products{
+    //     position: absolute;
+    //     top: 5rem;
+    //     right: -2rem;
+    //     background-color: $color-blanco;
+    //     width: 40rem;
+    //     z-index: 1;
+    //     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
+    //     border-radius: 1rem;
+    // }
 
 
     /******************************************/
