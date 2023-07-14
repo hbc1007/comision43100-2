@@ -167,7 +167,6 @@ const vistaHTML = () =>{
                 contProduct.innerText = totalOfProductos;
             } catch (error) {
                 console.log("LOGICA2: Error catch en vistaHTML");
-
             }
         }
     }

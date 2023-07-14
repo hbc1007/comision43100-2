@@ -31,6 +31,8 @@
     cursor: pointer;
 }
 
+//-------------------------------------------------------------------------//
+
 .container-icon{
     position: relative;
 }
@@ -51,6 +53,8 @@
     font-size: 1.2rem;
 }
 
+//-------------------------------------------------------------------------//
+
 .container-cart-products{
     position: absolute;
     margin: 0rem;
@@ -63,15 +67,23 @@
     border-radius: 1rem;
 }
 
-.cart-product{
-    @include flex(none, row wrap, space-between, none, center, 2rem, none);
-    padding: 2rem;
+.cart-product {
+    @include flex(none, row wrap, space-between, none, center, 1.5rem, none);
+    padding: 1rem 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
 .info-cart-product{
     width: 40rem;
     @include grid(2rem 20rem 8rem, 1fr, space-between, none, none, none, none);
+}
+
+.container-cart-products .titulo-carrito {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.40);
 }
 
 .titulo-producto-carrito{
@@ -101,13 +113,28 @@
 }
 
 .cart-total{
-    @include flex(none, none, center, none, center, 2rem, 2ren);
-    padding: 2rem 0;
+    width: 100%;
+    @include grid(1fr, 50% 50%, none, none, center, none, none);
+    text-align: center;
+    padding: 1rem;
+}
+
+.cart-total-1 {
+    margin: 0rem;
+    width: 100%;
+    @include grid(50% 50%, 1fr, none, center, center, none, none);
+    text-align: center;
+}
+
+.cart-total-2 {
+    width: 100%;
+    @include flex(row wrap, none, center, none, flex-center, 2rem, none);
+    padding: 1rem;
 }
 
 .cart-total h3{
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .total-pagar{
@@ -167,4 +194,36 @@
 
 #btn-menu {
     display: none;
+}
+
+//-----------------------------------------------------------//
+
+.cart-total-2  {
+    .boton-1 {
+        width: 16rem;
+        height: 5rem;
+        display: inline-block;
+        border: 0.2rem solid $color-lila-oscuro;
+        border-radius: 0.5rem;
+        background: $color-lila;
+        color: $color-negro;
+        font-size: 1.6rem;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .boton-2 {
+        width: 16rem;
+        height: 5rem;
+        display: inline-block;
+        border: 0.2rem solid $color-verde-limon-oscuro;
+        border-radius: 0.5rem;
+        background: $color-verde-limon;
+        color: $color-negro;
+        font-size: 1.6rem;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+    }
 }

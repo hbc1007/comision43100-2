@@ -118,9 +118,9 @@ h6 {
   justify-content: space-between;
   align-content: none;
   align-items: center;
-  column-gap: 2rem;
+  column-gap: 1.5rem;
   row-gap: none;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .info-cart-product {
@@ -133,6 +133,13 @@ h6 {
   align-items: none;
   column-gap: none;
   row-gap: none; }
+
+.container-cart-products .titulo-carrito {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
 
 .titulo-producto-carrito {
   font-size: 1.6rem;
@@ -156,19 +163,46 @@ h6 {
   cursor: pointer; }
 
 .cart-total {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  justify-content: none;
+  align-content: none;
+  align-items: center;
+  column-gap: none;
+  row-gap: none;
+  text-align: center;
+  padding: 1rem; }
+
+.cart-total-1 {
+  margin: 0rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  justify-content: none;
+  align-content: center;
+  align-items: center;
+  column-gap: none;
+  row-gap: none;
+  text-align: center; }
+
+.cart-total-2 {
+  width: 100%;
   display: flex;
-  flex-flow: none;
+  flex-flow: row wrap;
   flex-direction: none;
   justify-content: center;
   align-content: none;
-  align-items: center;
+  align-items: flex-center;
   column-gap: 2rem;
-  row-gap: 2ren;
-  padding: 2rem 0; }
+  row-gap: none;
+  padding: 1rem; }
 
 .cart-total h3 {
   font-size: 1.8rem;
-  font-weight: 700; }
+  font-weight: 900; }
 
 .total-pagar {
   font-size: 1.8rem;
@@ -223,6 +257,32 @@ h6 {
 
 #btn-menu {
   display: none; }
+
+.cart-total-2 .boton-1 {
+  width: 16rem;
+  height: 5rem;
+  display: inline-block;
+  border: 0.2rem solid #7167aa;
+  border-radius: 0.5rem;
+  background: #aba2e1;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none; }
+
+.cart-total-2 .boton-2 {
+  width: 16rem;
+  height: 5rem;
+  display: inline-block;
+  border: 0.2rem solid #a7af60;
+  border-radius: 0.5rem;
+  background: #dae47a;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none; }
 
 .footer-1 .footer-1-1 {
   width: 100%;
@@ -545,19 +605,6 @@ h6 {
 
 .codi-prod-cart {
   display: none; }
-
-.flexi {
-  padding: 1rem 1rem;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-flow: column wrap;
-  flex-direction: center;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  column-gap: none;
-  row-gap: 2rem; }
 
 .main-c {
   padding-top: 9.6rem;
