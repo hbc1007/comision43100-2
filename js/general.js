@@ -9,9 +9,6 @@ window.addEventListener('scroll', function() {
 
 
 //---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
 //CLASE - PRODUCTOS EN CARRITO
 //---------------------------------------------------------------------------------------//
 class clsProducto {
@@ -21,32 +18,6 @@ class clsProducto {
         this.price = parseFloat(obj.price),
         this.id = obj.id
     }
-}
-
-
-//---------------------------------------------------------------------------------------//
-//FUNCION - RENDERIZACION DE PRODUCTOS
-//---------------------------------------------------------------------------------------//
-function renderizarProductos(objProductos){
-    //VACIAMOS EL CONTENEDOR PARA EVITAR DUPLICADOS
-    contenedorProductos.innerHTML='';
-    //CARGAMOS LAS CARTAS DE LOS PRODUCTOS SOLICITADOS
-    for(const itemProducto of objProductos){
-        contenedorProductos.innerHTML+=`
-        <div class="item">
-            <figure>
-                <img src="${itemProducto.imagen}" alt="">
-            </figure>
-            <div class="info-product">
-                <p class="name">${itemProducto.nombre}</p>
-                <p class="price">${formatearValor(itemProducto.precio,2)}</p>
-                <button id="${itemProducto.id}" class="btn-add-cart botonCompra">Añadir al carrito</button>
-            </div>
-        </div>
-        `;
-    }
-
-    console.log('GENERAL: Se ha renderizado los productos');
 }
 
 
@@ -74,7 +45,7 @@ const contenedorCartaProductos = document.querySelector('.container-cart-product
 botonBolsaCompras.addEventListener('click', () => {
     contenedorCartaProductos.classList.toggle('hidden-cart');
 
-    console.log('GENERAL: Se ha usado la función flecha botonBolsaCompras');
+    console.log('GENERAL: Se ha usado la función flecha botonBolsaCompras.addEventListener');
     vistaHTML();
 });
 
@@ -89,13 +60,13 @@ function cantidadBolsa(){
     let productos = [];
     const almacenados = JSON.parse(localStorage.getItem('todos-Productos'));
     if (almacenados != null){
+        //INSERTA EN EL OBJETO TODO EL CONTENIDO DEL LOCAL STORAGE
         for (const objeto of almacenados)
-        //INSERTA EN LA CLASE clsProductos TODO HAY EN EL LOCALSTORAGE
         productos.push(new clsProducto(objeto));
-    
+        
         //SUMA LA CANTIDAD DE PRODUCTOS PARA QUE SE MUESTRE EN LA BOLSA
-        for (const producto of productos){
-            cantCarrito += producto.quantity;
+        for (const product of productos){
+            cantCarrito += product.quantity;
         }
     }
 
@@ -105,42 +76,35 @@ function cantidadBolsa(){
 cantidadBolsa();
 contProduct.innerText = cantCarrito;
 
-let finalizarBtn = document.getElementById("finalizar");
-let vaciarBtn = document.getElementById("vaciar");
 
 //---------------------------------------------------------------------------------------//
-//FUNCION FLECHA - FINALIZA LA COMPRA
+//FUNCIONES FLECHA - FINALIZAR COMPRA - VACIAR CARRITO
 //---------------------------------------------------------------------------------------//
-finalizarBtn.onclick=()=>{
+let finalizarCarrito = document.getElementById('finalizar');
+let vaciarCarrito = document.getElementById('vaciar');
+
+finalizarCarrito.onclick = () =>{
     todosProductos=[];
     filaProductos.innerHTML = '';
     cartEmpty.classList.remove('hidden');
     filaProductos.classList.add('hidden');
     cartTotal.classList.add('hidden');
     contProduct.innerText = "0";
-    //----------------------------------//
     localStorage.clear('todos-Productos');
     Swal.fire('Gracias por tu compra','Recibiras tu pedido en un máximo de 3 días','success');
-    
-    console.log('LOGICA2: Se ha usado la función flecha finalizarBtn');
+
+    console.log('GENERAL: Se ha usado la función flecha finalizarCarrito.onclick');
 }
 
-
-//---------------------------------------------------------------------------------------//
-//FUNCION FLECHA - VACIAR CARRITO DE COMPRAS
-//---------------------------------------------------------------------------------------//
-vaciarBtn.onclick=()=>{
+vaciarCarrito.onclick = () =>{
     todosProductos=[];
     filaProductos.innerHTML = '';
     cartEmpty.classList.remove('hidden');
     filaProductos.classList.add('hidden');
     cartTotal.classList.add('hidden');
     contProduct.innerText = "0";
-    //----------------------------------//
     localStorage.clear('todos-Productos');
     Swal.fire('Se ha vaciado el carrito','Puedes volver a seleccionar los productos de tu preferencia','success');
-    
-    console.log('LOGICA2: Se ha usado la función flecha finalizarBtn');
+
+    console.log('GENERAL: Se ha usado la función flecha vaciarCarrito.onclick');
 }
-
-
