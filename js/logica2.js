@@ -3,6 +3,8 @@ let contenedorProductos = document.getElementById('listaProductos');
 let filaProductos = document.querySelector('.row-product');
 let listaProductos = document.querySelector('.container-items');
 let listaBolsa = document.querySelector('.container-cart-icon');
+let valorImpto = document.querySelector('.total-impto');
+let valorVenta = document.querySelector('.total-venta');
 let valorTotal = document.querySelector('.total-pagar');
 let cartEmpty = document.querySelector('.cart-empty');
 let cartTotal = document.querySelector('.cart-total');
@@ -91,7 +93,7 @@ listaProductos.addEventListener('click', e =>{
             }
     
             //AGREGA DATOS DEL CARRITO DE COMPRAS EN EL LOCAL STORAGE
-            localStorage.setItem("todos-Productos", JSON.stringify(todosProductos));
+            localStorage.setItem('todos-Productos', JSON.stringify(todosProductos));
     
             console.log('LOGICA2: Se ha usado la función flecha listaProductos.addEventListener');
             vistaHTML();
@@ -111,10 +113,10 @@ filaProductos.addEventListener('click', e =>{
             const product = e.target.parentElement;
             const idPro = product.querySelector('.codi-prod-cart').textContent;
              //RECUPERA DATOS DEL LOCAL STORAGE
-            todosProductos = JSON.parse(localStorage.getItem("todos-Productos"));
+            todosProductos = JSON.parse(localStorage.getItem('todos-Productos'));
             todosProductos = todosProductos.filter(product => product.id !== idPro);
             //GUARDA EN EL LOCAL STORAGE
-            localStorage.setItem("todos-Productos", JSON.stringify(todosProductos));
+            localStorage.setItem('todos-Productos', JSON.stringify(todosProductos));
     
             console.log('LOGICA2: Se ha usado la función flecha filaProductos.addEventListener');
             vistaHTML();

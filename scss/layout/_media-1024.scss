@@ -5,6 +5,8 @@
     /******************************************/
 
     .header-1-2 {
+        margin: 0rem;
+
         label {
             display: block;
         }
@@ -17,6 +19,7 @@
     }
 
     .menu {
+        margin-top: 0rem;
         width: 2.4rem;
         height: 2.4rem;
     }
@@ -31,6 +34,11 @@
         height: 2.1rem;
     }
 
+    .titulo-carrito img {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
     .header-1-2-1 {
         @include flex(row wrap, none, space-between, none, center, none, none);
         padding: 1rem;
@@ -40,7 +48,7 @@
     .navbar {
         margin: 0rem;
         position: absolute;
-        top: 8.9rem;
+        top: 7.9rem;
         width: auto;
         margin-left: -100%;
     }
@@ -80,7 +88,7 @@
     /******************************************/
 
     .main-i {
-        padding-top: 9.4rem;
+        padding-top: 8.4rem;
 
         .main-i1 {
             .main-i1-1 {
@@ -108,34 +116,10 @@
     }
 
     /******************************************/
-    /*pagina contactos.html - 1024              */
-    /******************************************/
-
-    .main-o {
-        padding-top: 9.4rem;
-    }
-
-    /******************************************/
     /*pagina cuadernos.html - 1024              */
     /******************************************/
 
     .main-c {
-        padding-top: 9.4rem;
-    }
-
-    /******************************************/
-    /*pagina libretas.html - 1024              */
-    /******************************************/
-
-    .main-l {
-        padding-top: 9.4rem;
-    }
-
-    /******************************************/
-    /*pagina planner.html - 1024              */
-    /******************************************/
-
-    .main-p {
         padding-top: 9.4rem;
     }
 

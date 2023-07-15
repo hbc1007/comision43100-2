@@ -6,7 +6,7 @@ const vistaHTML = () =>{
 
     if (localStorage){
         //VERIFICAMOS SI EXISTE LOCALSTORAGE
-        if(localStorage.getItem("todos-Productos") !== undefined && localStorage.getItem('todos-Productos'))
+        if(localStorage.getItem('todos-Productos') !== undefined && localStorage.getItem('todos-Productos'))
         {
             try {
                 //RECUPERA DATOS DEL LOCAL STORAGE
@@ -31,6 +31,8 @@ const vistaHTML = () =>{
                 //LIMPIAR HTML
                 filaProductos.innerHTML = '';
         
+                let impto = 0;
+                let venta = 0;
                 let total = 0;
                 let totalOfProductos = 0;
         
@@ -49,18 +51,25 @@ const vistaHTML = () =>{
                         `;
         
                     filaProductos.append(containerProduct);
-        
+
+                    impto = impto + parseFloat((product.quantity * product.price.slice(3)) * 0.18);
+                    venta = venta + parseFloat((product.quantity * product.price.slice(3)) / 1.18);
                     total = total + parseFloat(product.quantity * product.price.slice(3));
                     totalOfProductos = totalOfProductos + product.quantity;
                 })
         
+                let valorForma3 = formatearValor(`${impto}`, 2);
+                let valorForma2 = formatearValor(`${venta}`, 2);
                 let valorFormat = formatearValor(`${total}`, 2);
+                
+                valorImpto.innerText = valorForma3;
+                valorVenta.innerText = valorForma2;
                 valorTotal.innerText = valorFormat;
                 contProduct.innerText = totalOfProductos;
 
                 console.log('CARRITO: Se ha usado la función flecha vistaHTML');
             } catch (error) {
-                console.log("CARRITO: Error catch en vistaHTML");
+                console.log("CARRITO: Error catch en vistaHTML", error);
             }
         }
         else{

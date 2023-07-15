@@ -1,4 +1,6 @@
 let filaProductos = document.querySelector('.row-product');
+let valorImpto = document.querySelector('.total-impto');
+let valorVenta = document.querySelector('.total-venta');
 let valorTotal = document.querySelector('.total-pagar');
 let cartEmpty = document.querySelector('.cart-empty');
 let cartTotal = document.querySelector('.cart-total');

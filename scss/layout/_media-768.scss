@@ -6,7 +6,7 @@
 
     .logo {
         padding-top: 1rem;
-        width: 16rem;
+        width: 14rem;
         height: 4rem;
     }
 
@@ -25,28 +25,28 @@
         height: 1.7rem;
     }
 
+    .titulo-carrito h3 {
+        padding-top: 1rem;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+
+    .titulo-carrito img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
     .navbar {
-        top: 7.5rem;
+        top: 6.5rem;
         width: auto;
         margin-left: -100%;
     }
 
     .container-cart-products{
-        top: 7rem;
+        top: 6.3rem;
         right: -4rem;
         width: 38rem;
     }
-
-    // .container-cart-products{
-    //     position: absolute;
-    //     top: 5rem;
-    //     right: -2rem;
-    //     background-color: $color-blanco;
-    //     width: 40rem;
-    //     z-index: 1;
-    //     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
-    //     border-radius: 1rem;
-    // }
 
 
     /******************************************/
@@ -58,7 +58,7 @@
     /******************************************/
 
     .main-i {
-        padding-top: 6.9rem;
+        padding-top: 6rem;
 
         .banner-i1 {
             .banner-i1-1 {

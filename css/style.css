@@ -109,7 +109,7 @@ h6 {
   width: 40rem;
   z-index: 1;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-radius: 1rem; }
+  border-radius: 1.5rem; }
 
 .cart-product {
   display: flex;
@@ -120,8 +120,8 @@ h6 {
   align-items: center;
   column-gap: 1.5rem;
   row-gap: none;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
 
 .info-cart-product {
   width: 40rem;
@@ -130,16 +130,34 @@ h6 {
   grid-template-rows: 1fr;
   justify-content: space-between;
   align-content: none;
-  align-items: none;
+  align-items: center;
   column-gap: none;
   row-gap: none; }
 
-.container-cart-products .titulo-carrito {
-  font-size: 1.8rem;
-  font-weight: 900;
-  text-align: center;
+.info-cart-product p {
+  padding-top: 1rem; }
+
+.titulo-carrito {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-direction: none;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: none;
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+
+.titulo-carrito h3 {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 900; }
+
+.titulo-carrito img {
+  width: 3.2rem;
+  height: 3.2rem; }
 
 .titulo-producto-carrito {
   font-size: 1.6rem;
@@ -182,8 +200,8 @@ h6 {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   justify-content: none;
-  align-content: center;
-  align-items: center;
+  align-content: none;
+  align-items: flex-center;
   column-gap: none;
   row-gap: none;
   text-align: center; }
@@ -195,17 +213,25 @@ h6 {
   flex-direction: none;
   justify-content: center;
   align-content: none;
-  align-items: flex-center;
+  align-items: center;
   column-gap: 2rem;
   row-gap: none;
   padding: 1rem; }
 
 .cart-total h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 900; }
+
+.total-impto {
+  font-size: 1.6rem;
+  font-weight: 900; }
+
+.total-venta {
+  font-size: 1.6rem;
   font-weight: 900; }
 
 .total-pagar {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 900; }
 
 .hidden-cart {
@@ -494,34 +520,6 @@ h6 {
 .codi-prod-cart {
   display: none; }
 
-.flexi {
-  padding: 1rem 1rem;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-flow: column wrap;
-  flex-direction: center;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  column-gap: none;
-  row-gap: 2rem; }
-
-.main-o {
-  padding-top: 9.6rem;
-  overflow: hidden; }
-  .main-o .banner-o1 .banner-o1-1 img {
-    display: block;
-    margin: 0rem;
-    width: 100%;
-    height: 600px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
-  .main-o .banner-o1 .banner-o1-2 img {
-    display: none; }
-
 .main-g {
   padding-top: 9.6rem;
   overflow: hidden; }
@@ -690,19 +688,6 @@ h6 {
 .codi-prod-cart {
   display: none; }
 
-.flexi {
-  padding: 1rem 1rem;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-flow: column wrap;
-  flex-direction: center;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  column-gap: none;
-  row-gap: 2rem; }
-
 .main-l {
   padding-top: 9.6rem;
   overflow: hidden; }
@@ -738,19 +723,6 @@ h6 {
 
 .codi-prod-cart {
   display: none; }
-
-.flexi {
-  padding: 1rem 1rem;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-flow: column wrap;
-  flex-direction: center;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  column-gap: none;
-  row-gap: 2rem; }
 
 .main-p {
   padding-top: 9.6rem;
@@ -788,19 +760,6 @@ h6 {
 .codi-prod-cart {
   display: none; }
 
-.flexi {
-  padding: 1rem 1rem;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  flex-flow: column wrap;
-  flex-direction: center;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  column-gap: none;
-  row-gap: 2rem; }
-
 @media (max-width: 1440px) {
   /******************************************/
   /***************HEADER - 1440***************/
@@ -823,13 +782,16 @@ h6 {
   /******************************************/
   /**************HEADER - 1024***************/
   /******************************************/
-  .header-1-2 label {
-    display: block; }
+  .header-1-2 {
+    margin: 0rem; }
+    .header-1-2 label {
+      display: block; }
   .logo {
     padding-top: 1rem;
     width: 18rem;
     height: 5rem; }
   .menu {
+    margin-top: 0rem;
     width: 2.4rem;
     height: 2.4rem; }
   .icon-cart {
@@ -838,6 +800,9 @@ h6 {
   .count-products {
     width: 2.1rem;
     height: 2.1rem; }
+  .titulo-carrito img {
+    width: 2.6rem;
+    height: 2.6rem; }
   .header-1-2-1 {
     display: flex;
     flex-flow: row wrap;
@@ -852,7 +817,7 @@ h6 {
   .navbar {
     margin: 0rem;
     position: absolute;
-    top: 8.9rem;
+    top: 7.9rem;
     width: auto;
     margin-left: -100%; }
   .navbar ul {
@@ -879,7 +844,7 @@ h6 {
   /*pagina inicio.html - 1024               */
   /******************************************/
   .main-i {
-    padding-top: 9.4rem; }
+    padding-top: 8.4rem; }
     .main-i .main-i1 .main-i1-1 {
       display: grid;
       grid-template-columns: repeat(2, minmax(16rem, 26rem));
@@ -913,24 +878,9 @@ h6 {
     column-gap: 3rem;
     row-gap: 3rem; }
   /******************************************/
-  /*pagina contactos.html - 1024              */
-  /******************************************/
-  .main-o {
-    padding-top: 9.4rem; }
-  /******************************************/
   /*pagina cuadernos.html - 1024              */
   /******************************************/
   .main-c {
-    padding-top: 9.4rem; }
-  /******************************************/
-  /*pagina libretas.html - 1024              */
-  /******************************************/
-  .main-l {
-    padding-top: 9.4rem; }
-  /******************************************/
-  /*pagina planner.html - 1024              */
-  /******************************************/
-  .main-p {
     padding-top: 9.4rem; }
   /******************************************/
   /*pagina libretas.html - 1024              */
@@ -963,7 +913,7 @@ h6 {
   /******************************************/
   .logo {
     padding-top: 1rem;
-    width: 16rem;
+    width: 14rem;
     height: 4rem; }
   .menu {
     width: 2rem;
@@ -974,12 +924,19 @@ h6 {
   .count-products {
     width: 1.7rem;
     height: 1.7rem; }
+  .titulo-carrito h3 {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 900; }
+  .titulo-carrito img {
+    width: 2.4rem;
+    height: 2.4rem; }
   .navbar {
-    top: 7.5rem;
+    top: 6.5rem;
     width: auto;
     margin-left: -100%; }
   .container-cart-products {
-    top: 7rem;
+    top: 6.3rem;
     right: -4rem;
     width: 38rem; }
   /******************************************/
@@ -989,7 +946,7 @@ h6 {
   /*pagina inicio.html - 768                */
   /******************************************/
   .main-i {
-    padding-top: 6.9rem; }
+    padding-top: 6rem; }
     .main-i .banner-i1 .banner-i1-1 img {
       display: none; }
     .main-i .banner-i1 .banner-i1-2 img {
